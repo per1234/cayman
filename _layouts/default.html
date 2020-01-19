@@ -10,20 +10,21 @@
 
   <body>
     <header>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
       <center>
         <h1 class="project-name">{{ site.title }}</h1>
         <a href="{{ site.github.repository_url }}">GitHub Repository</a>
       </center>
-    </header>
 
-    <main id="content" class="main-content" role="main">
       {% if page.name != "index.md" %}
         <b>
           <a href="{{ site.github.url }}">Home</a> > {{ page.title }}
         </b>
         <br>
       {% endif %}
+    </header>
 
+    <main id="content" class="main-content" role="main">
       {{ content }}
 
       <footer class="site-footer">
