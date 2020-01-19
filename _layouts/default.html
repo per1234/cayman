@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="page-header" role="banner">
-      <h1 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-        <a href="{{ site.github.repository_url }}" class="btn">View on 1GitHub</a>
+    <header>
+      <h1>{{ site.title }}</h1>
+      <a href="{{ site.github.repository_url }}">View on GitHub</a>
     </header>
 
-    <main id="content" class="main-content" role="main">
+    <main id="content">
       {{ content }}
-
-      <footer class="site-footer">
-      </footer>
     </main>
   </body>
 </html>
