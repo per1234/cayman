@@ -65,15 +65,15 @@ a {
   background-color: $header-bg-color;
 
   @include large {
-    padding: 5rem 6rem;
+    padding: 1rem;
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    padding: 1rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 1rem;
   }
 }
 
@@ -96,26 +96,32 @@ a {
   }
 }
 
-.repository-link {
-  text-align: right;
+.navigation {
+  @include large {
+    max-width: 64rem;
+    padding: 0rem 6rem;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+
+  @include medium {
+    padding: 0rem 4rem;
+    font-size: 1rem;
+  }
+
+  @include small {
+    padding: 0rem 1rem;
+    font-size: 0.9rem;
+  }
 }
 
 .breadcrumb {
   text-align: left;
   font-weight: bold;
+}
 
-  @include large {
-    max-width: 64rem;
-    font-size: 1rem;
-  }
-
-  @include medium {
-    font-size: 1rem;
-  }
-
-  @include small {
-    font-size: 0.9rem;
-  }
+.repository-link {
+  text-align: right;
 }
 
 .main-content {
@@ -127,18 +133,18 @@ a {
 
   @include large {
     max-width: 64rem;
-    padding: 2rem 6rem;
+    padding: 1rem 6rem;
     margin: 0 auto;
     font-size: 1.1rem;
   }
 
   @include medium {
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
     font-size: 1.1rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     font-size: 1rem;
   }
   
