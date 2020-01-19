@@ -9,12 +9,10 @@
   </head>
 
   <body>
-    <header>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
-      <center>
-        <h1 class="project-name">{{ site.title }}</h1>
-        <a href="{{ site.github.repository_url }}">GitHub Repository</a>
-      </center>
+    <header class="page-header">
+      <h1 class="page-title">{{ site.title }}</h1>
+      <a href="{{ site.github.repository_url }}">GitHub Repository</a>
 
       {% if page.name != "index.md" %}
         <b>
