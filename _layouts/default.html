@@ -15,8 +15,9 @@
       <a href="{{ site.github.repository_url }}">GitHub Repository</a>
 
       {% if page.name != "index.md" %}
-        <br>
-        <a class="breadcrumb" href="{{ site.github.url }}">Home</a> > {{ page.title }}
+        <span class="breadcrumb">
+          <a href="{{ site.github.url }}">Home</a> > {{ page.title }}
+        </span>
       {% endif %}
     </header>
 
